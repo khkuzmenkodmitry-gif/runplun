@@ -37,7 +37,6 @@ h3{font-size:16px;font-weight:800}
 .card-h{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:14px}
 .card-h h2{margin:0}
 .card-h .link{color:var(--volt);font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
-.grid{display:grid;gap:12px}
 .row{display:flex;gap:10px;flex-wrap:wrap}
 .row > *{flex:1 1 140px}
 label{display:block;font-size:12px;color:var(--muted);margin-bottom:4px;text-transform:uppercase;letter-spacing:.06em;font-weight:700}
@@ -54,7 +53,6 @@ button{font:inherit;cursor:pointer}
 .btn.sm{padding:8px 12px;font-size:12px}
 .btn:disabled{opacity:.4;cursor:not-allowed}
 
-/* ===== HERO ===== */
 .hero{background:linear-gradient(135deg,#1a1a1a 0%,#0c0c0c 100%);border-radius:var(--r);padding:24px;margin-bottom:12px;position:relative;overflow:hidden}
 .hero:before{content:"";position:absolute;right:-60px;top:-60px;width:240px;height:240px;background:radial-gradient(circle,rgba(212,255,0,.18),transparent 70%);border-radius:50%}
 .hero .date{color:var(--muted);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
@@ -65,7 +63,6 @@ button{font:inherit;cursor:pointer}
 .badge.orange{background:var(--orange);color:#000;border:none}
 .badge.rest{background:var(--surface3);color:var(--muted)}
 
-/* ===== RING + QUICK STATS ===== */
 .rings{display:grid;grid-template-columns:220px 1fr;gap:16px;align-items:center}
 @media(max-width:640px){.rings{grid-template-columns:1fr}}
 .ring-svg{width:100%;height:auto;display:block}
@@ -74,7 +71,6 @@ button{font:inherit;cursor:pointer}
 .quick .qs .v{font-size:26px;font-weight:900;letter-spacing:-.03em;line-height:1.1}
 .quick .qs .l{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-weight:700;margin-top:4px}
 
-/* ===== STATS GRID ===== */
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
 .stat{background:var(--surface2);border-radius:12px;padding:16px 14px}
 .stat .v{font-size:28px;font-weight:900;letter-spacing:-.03em;line-height:1;color:var(--text)}
@@ -83,12 +79,10 @@ button{font:inherit;cursor:pointer}
 .stat.volt .v{color:var(--volt)}
 .stat.orange .v{color:var(--orange)}
 
-/* ===== CHART ===== */
 .chart{width:100%;height:140px;display:block}
 .chart-legend{display:flex;gap:14px;font-size:11px;color:var(--muted);margin-top:8px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
 .chart-legend .dot{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:6px;vertical-align:middle}
 
-/* ===== COACH ===== */
 .coach{background:linear-gradient(135deg,#1a1400 0%,#0c0c0c 100%);border-radius:var(--r);padding:20px;margin-bottom:12px;position:relative;overflow:hidden}
 .coach:before{content:"";position:absolute;left:-80px;top:-80px;width:280px;height:280px;background:radial-gradient(circle,rgba(255,107,0,.12),transparent 70%);border-radius:50%;pointer-events:none}
 .coach .ch{display:flex;align-items:center;gap:10px;margin-bottom:14px;position:relative}
@@ -110,7 +104,6 @@ button{font:inherit;cursor:pointer}
 .rec-actions .btn{flex:1}
 .rec-empty{text-align:center;padding:20px 0;color:var(--muted);font-size:13px}
 
-/* ===== PLAN ===== */
 .week{background:var(--surface);border-radius:var(--r);margin-bottom:12px;overflow:hidden}
 .week-head{padding:14px 16px;background:var(--surface2);display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font-size:12px;align-items:center}
 .week-head b{font-size:14px;font-weight:800}
@@ -131,7 +124,6 @@ button{font:inherit;cursor:pointer}
 .day-adjust{font-size:10px;color:var(--warn);font-weight:700}
 @media(max-width:800px){.days{grid-template-columns:repeat(2,1fr)}}
 
-/* ===== ACTIVITY / LIST ===== */
 .act{background:var(--surface2);border-radius:12px;padding:14px;margin-bottom:10px}
 .act-head{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-bottom:8px}
 .act-head b{font-size:14px;font-weight:800}
@@ -140,13 +132,11 @@ button{font:inherit;cursor:pointer}
 .pill.orange{background:var(--orange);color:#000}
 .pill.bad{background:rgba(255,59,48,.2);color:var(--bad)}
 
-/* ===== WELLNESS ===== */
 .wellness-scale{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
 .wellness-scale button{width:42px;height:42px;border-radius:10px;border:1px solid var(--line);background:var(--surface2);color:var(--text);font-weight:900;font-size:15px;transition:all .15s}
 .wellness-scale button:hover{background:var(--surface3)}
 .wellness-scale button.on{background:var(--volt);color:#000;border-color:var(--volt);transform:scale(1.05)}
 
-/* ===== MODAL ===== */
 .modal-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.8);display:flex;align-items:flex-start;justify-content:center;padding:20px;z-index:100;overflow-y:auto}
 .modal{background:var(--surface);border-radius:16px;padding:22px;max-width:540px;width:100%;margin:auto;position:relative}
 .modal h2{margin:0 0 16px;font-size:20px}
@@ -155,8 +145,6 @@ button{font:inherit;cursor:pointer}
 
 .hidden{display:none!important}
 .empty{text-align:center;padding:40px 20px;color:var(--muted);font-size:13px}
-.spacer{height:8px}
-.divider{height:1px;background:var(--line);margin:16px 0}
 </style>
 </head>
 <body>
@@ -209,7 +197,8 @@ function parseNum(str){
   const n=parseFloat(s); return isFinite(n)?n:null;
 }
 function escapeHtml(s){ return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
-function fmtTime(sec){ if(!sec) return '0ч'; const h=Math.floor(sec/3600), m=Math.round((sec%3600)/60); return h+'ч '+m+'м'; }
+function fmtTime(sec){ if(!sec||!isFinite(sec)) return '0ч'; const h=Math.floor(sec/3600), m=Math.round((sec%3600)/60); return h+'ч '+m+'м'; }
+function fmtHM(sec){ if(!sec||!isFinite(sec)) return '—'; const h=Math.floor(sec/3600), m=Math.round((sec%3600)/60); return h+':'+pad(m); }
 function average(arr){ if(!arr.length) return 0; return arr.reduce((a,b)=>a+b,0)/arr.length; }
 
 /* ============ PLAN BUILDER ============ */
@@ -278,17 +267,77 @@ function buildPlan(){
 }
 
 /* ============ STATE ============ */
-const STORAGE_KEY='runplan_v3';
+const STORAGE_KEY='runplan_v4';
 let state=null;
-function loadState(){ try{ const raw=localStorage.getItem(STORAGE_KEY)||localStorage.getItem('runplan_v2')||localStorage.getItem('runplan_v1'); if(!raw) return null; const s=JSON.parse(raw); if(!s||!Array.isArray(s.plan)||!s.plan.length) return null; return s; }catch(e){ return null; } }
+function loadState(){ try{ const raw=localStorage.getItem(STORAGE_KEY)||localStorage.getItem('runplan_v3')||localStorage.getItem('runplan_v2')||localStorage.getItem('runplan_v1'); if(!raw) return null; const s=JSON.parse(raw); if(!s||!Array.isArray(s.plan)||!s.plan.length) return null; return s; }catch(e){ return null; } }
 function saveState(){ try{ localStorage.setItem(STORAGE_KEY,JSON.stringify(state)); }catch(e){ console.warn(e); } }
-function initState(){ return {version:3,plan:buildPlan(),activities:[],wellness:{},changes:[],coachAccepted:[],coachDismissed:{},settings:{maxHR:185,thrHR:160,thrPace:305}}; }
+function initState(){ return {version:4,plan:buildPlan(),activities:[],wellness:{},changes:[],coachAccepted:[],coachDismissed:{},settings:{maxHR:185,thrHR:160,thrPace:305,raceDate:'2027-05-02',raceGoalSec:13800,oporaDays:90}}; }
 
 /* ============ ANALYSIS ============ */
 function findNextQuality(from){ return state.plan.find(d=>d.date>from && (d.type==='tempo'||d.type==='intervals') && d.status!=='done' && !d.autoAdjusted); }
 function findNextLong(from){ return state.plan.find(d=>d.date>from && d.type==='long' && d.status!=='done' && !d.autoAdjusted); }
 function findNextEasy(from){ return state.plan.find(d=>d.date>from && d.type==='easy' && d.status!=='done' && !d.autoAdjusted && !d.strength); }
 function addChange(date,text){ state.changes.unshift({date,text,added:new Date().toISOString()}); if(state.changes.length>200) state.changes.length=200; }
+
+function reactiveAdjust(act){
+  const changes=[];
+  const day=state.plan.find(d=>d.date===act.date);
+  if(!day) return changes;
+  const targetHR=day.hr||160;
+  const w=state.wellness[act.date]?.score??null;
+
+  // 1) Высокий пульс — разгрузка следующих 3 дней
+  if(act.avgHR && act.avgHR>targetHR+8){
+    const window=state.plan.filter(d=>d.date>act.date && d.date<=addDays(act.date,3) && d.status!=='done' && d.type!=='rest' && !d.autoAdjusted);
+    window.forEach(d=>{
+      if(d.type==='tempo'||d.type==='intervals'){
+        d.originalTitle=d.originalTitle||d.title;
+        d.title='Лёгкий бег (авто: разгрузка)';
+        d.type='easy'; d.pace=[350,370]; d.hr=145; d.quality=false; d.paceCheck=true;
+        d.dist=[Math.min(6,d.dist?d.dist[0]:6),Math.min(7,d.dist?d.dist[1]:7)];
+        d.autoAdjusted=true; d.adjustReason=`Авто: после высокой нагрузки (пульс ${act.avgHR})`;
+        changes.push({date:d.date,text:`Качественная → лёгкий бег: пульс ${act.avgHR} на ${fmtDate(act.date,false)}`});
+      } else if(d.type==='long' && d.dist){
+        d.dist=[Math.round(d.dist[0]*0.9*10)/10,Math.round(d.dist[1]*0.9*10)/10];
+        d.autoAdjusted=true; d.adjustReason='Авто: длительная −10%';
+        changes.push({date:d.date,text:'Длительная −10% из-за высокой нагрузки'});
+      }
+    });
+  }
+
+  // 2) Плохое самочувствие — заменить следующее качество
+  if(w!=null && w<=5){
+    const next=findNextQuality(act.date);
+    if(next){
+      next.originalTitle=next.title;
+      next.title='Лёгкий бег (авто: восстановление)';
+      next.type='easy'; next.pace=[360,380]; next.hr=140; next.quality=false; next.paceCheck=true;
+      next.autoAdjusted=true; next.adjustReason=`Авто: самочувствие ${w}/10`;
+      changes.push({date:next.date,text:`Качественная → лёгкий бег: самочувствие ${w}/10`});
+    }
+  }
+
+  // 3) Лёгкое качество — прогрессия
+  if((day.type==='tempo'||day.type==='intervals') && act.avgHR && act.avgHR<=targetHR && (w==null||w>=8)){
+    const next=findNextQuality(act.date);
+    if(next && next.pace){
+      next.pace=[Math.max(240,next.pace[0]-3),Math.max(245,next.pace[1]-3)];
+      next.autoAdjusted=true; next.adjustReason='Авто: прогрессия';
+      changes.push({date:next.date,text:'Целевой темп следующей качественной −3 сек/км (прогрессия)'});
+    }
+  }
+
+  // 4) Лёгкая длительная — прогрессия +5%
+  if(day.type==='long' && act.avgHR && act.avgHR<=150 && (w==null||w>=8)){
+    const next=findNextLong(act.date);
+    if(next && next.dist){
+      next.dist=[Math.round(next.dist[0]*1.05*10)/10,Math.round(next.dist[1]*1.05*10)/10];
+      next.autoAdjusted=true; next.adjustReason='Авто: длительная +5%';
+      changes.push({date:next.date,text:'Длительная +5% (прошлая прошла легко)'});
+    }
+  }
+  return changes;
+}
 
 function analyzeActivity(act){
   const day=state.plan.find(d=>d.date===act.date);
@@ -316,7 +365,9 @@ function analyzeActivity(act){
   }
   const w=state.wellness[act.date]?.score;
   if(w!=null && w<=4) recs.push({tone:'warn',icon:'😴',title:'Низкое самочувствие',text:`${w}/10 в этот день. Снизить нагрузку, следить за сном.`});
-  act.analysis={recs};
+  const reactive=reactiveAdjust(act);
+  reactive.forEach(c=>addChange(c.date,c.text));
+  act.analysis={recs,reactive};
 }
 
 function applyWellnessRules(){
@@ -464,8 +515,7 @@ function computeStats(){
   const totalTime=acts.reduce((s,a)=>s+(a.durationSec||0),0);
   const days=new Set(acts.map(a=>a.date)).size;
   const avgHR=acts.filter(a=>a.avgHR).length? Math.round(average(acts.filter(a=>a.avgHR).map(a=>a.avgHR))):0;
-  const totalKmAll=acts.reduce((s,a)=>s+(a.distanceKm||0),0);
-const avgPace=totalKmAll? Math.round(totalSecAll/totalKmAll):0;
+  const avgPace=totalKm>0? Math.round(totalTime/totalKm):0;
   const avgCad=acts.filter(a=>a.cadence).length? Math.round(average(acts.filter(a=>a.cadence).map(a=>a.cadence))):0;
   const longest=acts.reduce((m,a)=>Math.max(m,a.distanceKm||0),0);
   const donePlan=state.plan.filter(d=>d.status==='done').length;
@@ -489,6 +539,71 @@ function trendSeries(n=10){
   return {dates:acts.map(a=>a.date),paces:acts.map(a=>a.avgPaceSec).filter(Boolean),hrs:acts.map(a=>a.avgHR).filter(Boolean)};
 }
 
+/* ============ MARATHON FORECAST ============ */
+function riegel(fromDist, fromSec, toDist){ return fromSec * Math.pow(toDist/fromDist, 1.06); }
+function bestEquivalent(daysBack){
+  const cutoff=addDays(todayISO(),-daysBack);
+  let best=null;
+  for(const a of (state.activities||[])){
+    if(a.date<cutoff) continue;
+    if(!a.distanceKm||!a.avgPaceSec) continue;
+    const isRace=(a.distanceKm>=4.5&&a.distanceKm<=5.5&&a.avgPaceSec<270) ||
+                 (a.distanceKm>=9.5&&a.distanceKm<=11&&a.avgPaceSec<285) ||
+                 (a.distanceKm>=20&&a.distanceKm<=22.5&&a.avgPaceSec<320);
+    if(!isRace) continue;
+    const t=a.durationSec||(a.avgPaceSec*a.distanceKm);
+    if(!best||t<best.sec) best={dist:a.distanceKm,sec:t,date:a.date,title:a.title};
+  }
+  return best;
+}
+function findHalfPB(daysBack){
+  const cutoff=addDays(todayISO(),-daysBack);
+  let best=null;
+  for(const a of (state.activities||[])){
+    if(a.date<cutoff) continue;
+    if(!a.distanceKm||!a.avgPaceSec) continue;
+    if(a.distanceKm>=20&&a.distanceKm<=22.5&&a.avgPaceSec<320){
+      const t=a.durationSec||(a.avgPaceSec*a.distanceKm);
+      if(!best||t<best.sec) best={sec:t,date:a.date};
+    }
+  }
+  return best;
+}
+function forecastMarathon(){
+  const opts=state.settings||{};
+  const raceDate=opts.raceDate||'2027-05-02';
+  const raceGoal=opts.raceGoalSec||13800;
+  const daysBack=opts.oporaDays||90;
+  const forecasts=[];
+
+  const opora=bestEquivalent(daysBack);
+  if(opora){
+    forecasts.push({method:'Ригель',value:riegel(opora.dist,opora.sec,42.195),note:`От ${opora.dist.toFixed(1)} км за ${fmtTime(opora.sec)} (${fmtDate(opora.date,false)})`});
+  }
+  const thr=(opts.thrPace||305)*1.10;
+  forecasts.push({method:'По порогу',value:thr*42.195,note:`Порог ${fmtPace(opts.thrPace||305)}/км × 1.10`});
+
+  const weeks=weeklyVolumes(6);
+  const kmPerWeek=average(weeks.map(w=>w.km));
+  const halfPB=findHalfPB(daysBack);
+  let halfSec=halfPB?halfPB.sec:null;
+  if(!halfSec && opora) halfSec=riegel(opora.dist,opora.sec,21.0975);
+  if(halfSec){
+    const corr=kmPerWeek<40?1.10:kmPerWeek<55?1.03:1.00;
+    forecasts.push({method:'По объёму',value:halfSec*2*corr,note:`ПМ ${fmtTime(halfSec)} × 2, объём ${kmPerWeek.toFixed(0)} км/нед (${corr===1?'без поправки':(corr===1.10?'+10%':'+3%')})`});
+  }
+
+  if(!forecasts.length) return null;
+  const vals=forecasts.map(f=>f.value).sort((a,b)=>a-b);
+  const median=vals[Math.floor(vals.length/2)];
+  const min=vals[0], max=vals[vals.length-1];
+  const goalDiff=(median-raceGoal)/raceGoal;
+  let readiness='realistic';
+  if(goalDiff>0.05) readiness='ambitious';
+  else if(goalDiff<-0.05) readiness='conservative';
+  return {forecasts,median,min,max,goalDiff,readiness,raceDate,raceGoal,daysBack,opora,kmPerWeek,halfSec};
+}
+
 /* ============ RENDER ============ */
 function typeLabel(t){ return ({rest:'отдых',easy:'лёгкий',tempo:'темпо',intervals:'интервалы',long:'длительная',race:'гонка'})[t]||t; }
 function targetText(d){
@@ -504,7 +619,6 @@ function renderAll(){
   document.getElementById('today-badge').textContent = fmtDate(todayISO());
 }
 
-/* ============ DASHBOARD ============ */
 function renderDash(){
   const el=$('#tab-dash');
   const today=todayISO();
@@ -523,8 +637,10 @@ function renderDash(){
   const pct=weekGoal?Math.min(1,thisWeekKm/weekGoal):0;
   const ringC=2*Math.PI*70;
   const suggestions=generateCoachSuggestions();
+  const fc=forecastMarathon();
 
   let html='';
+  // HERO
   html+='<div class="hero">';
   html+='<div class="date">'+fmtDate(today)+'</div>';
   if(todayDay){
@@ -546,6 +662,7 @@ function renderDash(){
   }
   html+='</div>';
 
+  // RING + QUICK
   html+='<div class="card"><div class="rings">';
   html+='<div><svg viewBox="0 0 180 180" class="ring-svg">';
   html+='<circle cx="90" cy="90" r="70" stroke="#1a1a1a" stroke-width="14" fill="none"/>';
@@ -560,11 +677,13 @@ function renderDash(){
   html+='<div class="qs"><div class="v">'+stats.count+'</div><div class="l">тренировок всего</div></div>';
   html+='</div></div></div>';
 
+  // WELLNESS quick
   html+='<div class="card"><div class="card-h"><h2>Как самочувствие?</h2></div>';
   html+='<div class="wellness-scale" id="quick-wellness">';
   for(let i=1;i<=10;i++) html+='<button data-score="'+i+'" class="'+(w&&w.score===i?'on':'')+'">'+i+'</button>';
   html+='</div></div>';
 
+  // CUMULATIVE STATS (FIXED pace display)
   html+='<div class="card"><div class="card-h"><h2>Накопительно</h2></div><div class="stats">';
   html+='<div class="stat volt"><div class="v">'+stats.totalKm.toFixed(1)+'</div><div class="l">км пробежано</div></div>';
   html+='<div class="stat"><div class="v">'+stats.days+'</div><div class="l">дней с бегом</div></div>';
@@ -576,6 +695,25 @@ function renderDash(){
   html+='<div class="stat"><div class="v">'+stats.count+'</div><div class="l">всего тренировок</div></div>';
   html+='</div></div>';
 
+  // MARATHON FORECAST
+  if(fc){
+    const readinessText=fc.readiness==='realistic'?'Реалистично':fc.readiness==='ambitious'?'Амбициозно':'С запасом';
+    const readinessColor=fc.readiness==='realistic'?'var(--volt)':fc.readiness==='ambitious'?'var(--orange)':'var(--success)';
+    const daysToRace=Math.round((new Date(fc.raceDate)-new Date(today))/86400000);
+    html+='<div class="card"><div class="card-h"><h2>Прогноз марафона</h2><span class="link" style="color:'+readinessColor+'">'+readinessText+'</span></div>';
+    html+='<div style="display:flex;align-items:baseline;gap:14px;margin-bottom:8px;flex-wrap:wrap">';
+    html+='<div style="font-size:52px;font-weight:900;letter-spacing:-.04em;line-height:1">'+fmtHM(fc.median)+'</div>';
+    html+='<div class="muted" style="font-size:13px">медиана<br>'+fmtPace(Math.round(fc.median/42.195))+'/км</div>';
+    html+='</div>';
+    html+='<div class="muted" style="font-size:12px;margin-bottom:14px">Цель: <b style="color:var(--text)">'+fmtHM(fc.raceGoal)+'</b> · до старта <b style="color:var(--text)">'+daysToRace+' дн.</b> · диапазон <b style="color:var(--text)">'+fmtHM(fc.min)+'–'+fmtHM(fc.max)+'</b></div>';
+    html+='<div>';
+    fc.forecasts.forEach(f=>{
+      html+='<div style="display:flex;justify-content:space-between;gap:8px;padding:10px 0;border-top:1px solid var(--line);font-size:13px"><div><b>'+f.method+'</b><div class="muted" style="font-size:11px">'+escapeHtml(f.note)+'</div></div><div style="font-weight:800;color:var(--volt)">'+fmtHM(f.value)+'</div></div>';
+    });
+    html+='</div></div>';
+  }
+
+  // WEEKLY VOLUME
   html+='<div class="card"><div class="card-h"><h2>Объём по неделям</h2></div>';
   html+='<svg class="chart" viewBox="0 0 400 140" preserveAspectRatio="none">';
   const bw=400/weeks.length*0.6, gap=400/weeks.length;
@@ -587,6 +725,7 @@ function renderDash(){
   });
   html+='</svg></div>';
 
+  // TREND
   html+='<div class="card"><div class="card-h"><h2>Тренд последних тренировок</h2></div>';
   if(trend.paces.length<2) html+='<div class="empty">Пока мало данных. Загрузите тренировки.</div>';
   else {
@@ -607,6 +746,7 @@ function renderDash(){
   }
   html+='</div>';
 
+  // COACH
   html+='<div class="coach">';
   html+='<div class="ch"><div class="ai">✦</div><div><h2>Коуч</h2><div class="s">Рекомендации по плану</div></div></div>';
   if(suggestions.length===0){
@@ -648,7 +788,6 @@ function renderDash(){
   });
 }
 
-/* ============ PLAN ============ */
 function renderPlan(){
   const el=$('#tab-plan');
   const today=todayISO();
@@ -687,7 +826,6 @@ function renderPlan(){
   $$('.day',el).forEach(c=>c.addEventListener('click',()=>openEditModal(c.dataset.date)));
 }
 
-/* ============ UPLOAD ============ */
 function renderUpload(){
   const el=$('#tab-upload');
   let html='<div class="card"><h2>Загрузить тренировку</h2><div class="muted" style="margin-top:6px;margin-bottom:12px">Экспорт из Garmin Connect: «Занятия» → «Все занятия» → Экспорт CSV. Можно несколько файлов.</div>';
@@ -699,11 +837,17 @@ function renderUpload(){
     const sorted=[...state.activities].sort((a,b)=>b.date.localeCompare(a.date));
     sorted.slice(0,50).forEach(a=>{
       const recs=a.analysis?.recs||[];
+      const react=a.analysis?.reactive||[];
       html+='<div class="act">';
       html+='<div class="act-head"><div><b>'+fmtDate(a.date)+'</b> · '+escapeHtml(a.title)+'</div><div class="muted">'+a.distanceKm+' км · '+fmtPace(a.avgPaceSec)+'/км · '+(a.avgHR||'—')+' уд</div></div>';
       if(recs.length){
         html+='<div style="margin-top:8px">';
         recs.forEach(r=>{ const tone=r.tone==='good'?'volt':(r.tone==='warn'?'orange':'volt'); html+='<div style="font-size:12px;padding:6px 10px;border-left:3px solid var(--'+tone+');margin-bottom:4px;background:rgba(255,255,255,.03);border-radius:0 6px 6px 0">'+r.icon+' <b>'+escapeHtml(r.title)+'</b> — '+escapeHtml(r.text)+'</div>'; });
+        html+='</div>';
+      }
+      if(react.length){
+        html+='<div style="margin-top:8px">';
+        react.forEach(r=>{ html+='<div style="font-size:12px;padding:6px 10px;border-left:3px solid var(--warn);margin-bottom:4px;background:rgba(255,179,0,.05);border-radius:0 6px 6px 0">✎ '+escapeHtml(r.text)+'</div>'; });
         html+='</div>';
       }
       html+='<div style="margin-top:8px"><button class="btn sm" data-reanalyze="'+a.id+'">Пересчитать</button></div>';
@@ -748,7 +892,6 @@ function showImportPreview(acts){
   });
 }
 
-/* ============ DIARY ============ */
 function renderDiary(){
   const el=$('#tab-diary');
   const today=todayISO();
@@ -793,18 +936,22 @@ function renderDiary(){
   });
 }
 
-/* ============ SETTINGS ============ */
 function renderSettings(){
   const el=$('#tab-settings');
   const s=state.settings;
   let html='<div class="card"><h2>Настройки</h2>';
   html+='<div class="row"><label>Макс. пульс <input id="s-maxhr" type="number" value="'+s.maxHR+'"></label><label>Порог лактата (пульс) <input id="s-thrhr" type="number" value="'+s.thrHR+'"></label><label>Порог (темп) <input id="s-thrpace" value="'+fmtPace(s.thrPace)+'"></label></div>';
+  html+='<h3 style="margin-top:16px">Цель: марафон</h3><div class="row">';
+  html+='<label>Дата марафона <input id="s-racedate" type="date" value="'+(s.raceDate||'2027-05-02')+'"></label>';
+  html+='<label>Целевое время (ч:мм) <input id="s-racegoal" value="'+fmtHM(s.raceGoalSec||13800)+'"></label>';
+  html+='<label>Опора для прогноза (дней) <input id="s-opora" type="number" value="'+(s.oporaDays||90)+'"></label>';
+  html+='</div>';
   html+='<button class="btn primary" id="s-save" style="margin-top:10px">Сохранить</button></div>';
   html+='<div class="card"><h2>Данные</h2><div class="row">';
   html+='<button class="btn" id="s-export">📥 Экспорт JSON</button>';
   html+='<label style="margin:0;text-transform:none;font-size:13px;letter-spacing:0;color:var(--text);font-weight:500">Импорт JSON<input type="file" id="s-import" accept=".json" style="margin-top:6px"></label>';
   html+='</div><div class="row" style="margin-top:10px">';
-  html+='<button class="btn" id="s-reset-adjust">↺ Сбросить автокоррекции</button>';
+  html+='<button class="btn" id="s-reset-adjust">↺ Сбросить автокорректировки</button>';
   html+='<button class="btn danger" id="s-reset-all">🗑 Сбросить всё</button>';
   html+='</div></div>';
   el.innerHTML=html;
@@ -812,6 +959,9 @@ function renderSettings(){
     state.settings.maxHR=+$('#s-maxhr',el).value||185;
     state.settings.thrHR=+$('#s-thrhr',el).value||160;
     const p=parsePace($('#s-thrpace',el).value); if(p) state.settings.thrPace=p;
+    state.settings.raceDate=$('#s-racedate',el).value||'2027-05-02';
+    const goal=parseTime($('#s-racegoal',el).value); if(goal) state.settings.raceGoalSec=goal;
+    state.settings.oporaDays=+$('#s-opora',el).value||90;
     saveState(); renderAll();
   });
   $('#s-export',el).addEventListener('click',()=>{
@@ -896,7 +1046,9 @@ function initTabs(){
 function boot(){
   state=loadState();
   if(!state){ state=initState(); saveState(); }
-  if(!state.settings) state.settings={maxHR:185,thrHR:160,thrPace:305};
+  // merge settings defaults for old versions
+  const defs={maxHR:185,thrHR:160,thrPace:305,raceDate:'2027-05-02',raceGoalSec:13800,oporaDays:90};
+  state.settings=Object.assign({},defs,state.settings||{});
   if(!Array.isArray(state.activities)) state.activities=[];
   if(!state.wellness) state.wellness={};
   if(!Array.isArray(state.changes)) state.changes=[];
