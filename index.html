@@ -464,7 +464,8 @@ function computeStats(){
   const totalTime=acts.reduce((s,a)=>s+(a.durationSec||0),0);
   const days=new Set(acts.map(a=>a.date)).size;
   const avgHR=acts.filter(a=>a.avgHR).length? Math.round(average(acts.filter(a=>a.avgHR).map(a=>a.avgHR))):0;
-  const avgPace=acts.filter(a=>a.avgPaceSec).length? Math.round(average(acts.filter(a=>a.avgPaceSec).map(a=>a.avgPaceSec))):0;
+  const totalKmAll=acts.reduce((s,a)=>s+(a.distanceKm||0),0);
+const avgPace=totalKmAll? Math.round(totalSecAll/totalKmAll):0;
   const avgCad=acts.filter(a=>a.cadence).length? Math.round(average(acts.filter(a=>a.cadence).map(a=>a.cadence))):0;
   const longest=acts.reduce((m,a)=>Math.max(m,a.distanceKm||0),0);
   const donePlan=state.plan.filter(d=>d.status==='done').length;
