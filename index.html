@@ -567,7 +567,7 @@ function renderDash(){
   html+='<div class="card"><div class="card-h"><h2>Накопительно</h2></div><div class="stats">';
   html+='<div class="stat volt"><div class="v">'+stats.totalKm.toFixed(1)+'</div><div class="l">км пробежано</div></div>';
   html+='<div class="stat"><div class="v">'+stats.days+'</div><div class="l">дней с бегом</div></div>';
-  html+='<div class="stat orange"><div class="v">'+stats.avgPace+'</div><div class="l">средний темп</div><div class="sub">'+fmtPace(stats.avgPace)+' /км</div></div>';
+  html+='<div class="stat orange"><div class="v">'+fmtPace(stats.avgPace)+'</div><div class="l">средний темп</div><div class="sub">мин/км</div></div>';
   html+='<div class="stat"><div class="v">'+stats.avgHR+'</div><div class="l">средний пульс</div><div class="sub">уд/мин</div></div>';
   html+='<div class="stat"><div class="v">'+stats.avgCad+'</div><div class="l">средний каденс</div><div class="sub">шаг/мин</div></div>';
   html+='<div class="stat"><div class="v">'+stats.longest.toFixed(1)+'</div><div class="l">самая длинная</div><div class="sub">км</div></div>';
